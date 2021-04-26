@@ -24,9 +24,18 @@
     
     
     include_once 'Classes/Map.php';
-    $aa = new Map($twenty);
+    $map = new Map($twenty,$thirty,$fourty,45);
+    echo Count($map->createdMap);
+    for($i =0;$i<Count($map->createdMap);$i++){
+        echo $map->createdMap[$i]->getName();
+    }
+    
+    
+    
+    
+    /*$aa = new Map($twenty);
     $out = $aa->createMap[0];
-    echo $out->getName();
+    echo $out->getName();*/
 
         
     
